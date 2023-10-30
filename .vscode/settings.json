@@ -1,0 +1,20 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "_**/.vscode": true,
+        "_**/dist": true,
+        "_**/node_modules": true,
+        "_**/target": true,
+        "**/__pycache__": true,
+        "**/.gitignore": true,
+        "**/.husky": true,
+        "**/Cargo.lock": true,
+        "package-lock.json": true
+    },
+    "hide-files.files": []
+}

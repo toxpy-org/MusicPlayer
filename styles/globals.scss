@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  // color: rgb(var(--foreground-rgb));
+  // background: linear-gradient(
+  //     to bottom,
+  //     transparent,
+  //     rgb(var(--background-end-rgb))
+  //   )
+  //   rgb(var(--background-start-rgb));
+
+  background-image: url('../public/icon/Mortal_With_You.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: brightness(80%) blur(15px) saturate(50%);
+}
+
+.wrapper-bg {
+  background-color: hsla(0, 0%, 8%, 0.5);
+  box-shadow: 0px 0px 5px hsla(0, 0%, 15%, 0.3), inset 0px 0px 5px hsla(0, 0%, 100%, 0.02);
+  z-index: 2;
+}
+
+.music_canvas {
+  position: absolute;
+  bottom: 0;
+}
