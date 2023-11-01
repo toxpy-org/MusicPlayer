@@ -16,5 +16,20 @@
         "**/Cargo.lock": true,
         "package-lock.json": true
     },
-    "hide-files.files": []
+    "hide-files.files": [],
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "ca": "",
+                    "cert": "C:\\Users\\natox\\AppData\\Roaming\\postgresql\\root.crt"
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "CockroachDB",
+            "connectString": "postgresql://natox:VmJNZgtKHcDUy9rij0djWw@hollow-warrior-4016.7tt.cockroachlabs.cloud:26257/musicplayer?sslmode=verify-full",
+            "name": "MusicDB"
+        }
+    ]
 }
