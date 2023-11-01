@@ -1,7 +1,7 @@
 const path = require("path");
 
-let assetPrefix = "/";
-let basePath = "/";
+// let assetPrefix = "/";
+// let basePath = "/";
 
 // if (isGithubActions) {
 //   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
@@ -12,17 +12,16 @@ let basePath = "/";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  assetPrefix: assetPrefix,
-  basePath: basePath,
-  images: {
-    loader: "imgix",
-    path: 'the "domain" of your Imigix source',
-  },
+  // assetPrefix: assetPrefix,
+  // basePath: basePath,
+  // images: {
+  //   loader: "imgix",
+  //   path: 'the "domain" of your Imigix source',
+  // },
 };
 
 module.exports = nextConfig;
